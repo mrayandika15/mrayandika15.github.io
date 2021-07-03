@@ -16,7 +16,10 @@
 
         <!-- BUTTON HOMEPAGE -->
         <div class="flex ml-3 mb-4">
+            <nuxt-link to="/Aboutme">
                 <button class="border border-white text-white text-xs py-1 px-3 mr-5 md:py-2 md:px-3 transition-all hover:bg-white hover:text-black " >Read More</button>
+            </nuxt-link>
+
                 <button class="border border-white text-white text-xs py-1 px-3 transition-all hover:bg-white hover:text-black" >View More</button>
         </div>
 

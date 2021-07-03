@@ -3,7 +3,7 @@
         <div class="flex  w-full mt-24 flex-col ">
             <!-- Headline Project  -->
             <div class="flex text-white font-semibold text-2xl ml-2 md:ml-16  flex-col ">
-                <h4 class="md:text-3xl">Project</h4>
+                <h4 class="md:text-3xl">Personal Project</h4>
                 <div class="underline my-3"></div>
             </div>
             <!-- Content Project -->

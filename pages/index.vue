@@ -2,6 +2,7 @@
   <div>
     <HomePage />
     <Project />
+    <Personal />
   </div>
 </template>
 <script>
