@@ -9,12 +9,19 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "@nuxtjs/tailwindcss": "^4.1.2",
-    "autoprefixer": "9",
+    "@nuxtjs/axios": "^5.13.6",
+    "@nuxtjs/toast": "^3.3.1",
+    "aos": "^3.0.0-beta.6",
     "core-js": "^3.9.1",
+    "emailjs-com": "^3.2.0",
     "nuxt": "^2.15.3",
-    "postcss": "7",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat"
+    "vue-scrollactive": "^0.9.3",
+    "vue-toasted": "^1.1.28"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^4.2.0",
+    "autoprefixer": "^10.2.6",
+    "postcss": "^8.3.5",
+    "tailwindcss": "^2.2.4"
+  }
 }

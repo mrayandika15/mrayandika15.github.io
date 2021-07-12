@@ -1,16 +1,23 @@
 <template >
-    <div class="flex w-full h-full ">
+<section id="project" class="relative h-full">
+    <div class="flex w-full h-full  "  >
         <div class="flex  w-full mt-24 flex-col ">
             <!-- Headline Project  -->
-            <div class="flex text-white font-semibold text-2xl ml-2 md:ml-16  flex-col ">
+            <div class="flex text-white font-semibold text-2xl ml-2 md:ml-16  flex-col "
+            data-aos="fade-up"
+            data-aos-once="true"
+            >
                 <h4 class="md:text-3xl">Project</h4>
                 <div class="underline my-3"></div>
             </div>
             <!-- Content Project -->
             <!-- <div class="flex text-white w-full items-center flex-col  md:ml-16 md:flex-row md:flex-wrap"> -->
             <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2  place-items-center relative">
-                <div class="card relative w-96 md:h-full my-4 md:mr-14 cursor-pointer" v-for="card in DataContent" >
-                <nuxt-link to="/ProjectView">
+                <div class="card relative w-96 md:h-full my-4 md:mr-14 cursor-pointer"
+                v-for="card in Filteredporto"
+                data-aos="fade-up"
+                data-aos-once="true" >
+                <nuxt-link :to="card.number"  >
                     <!-- Image Content -->
                     <div class="absolute w-full h-full">
                         <img class="bg-auto bg-no-repeat bg-center w-full h-full" :src="card.img" alt="">
@@ -19,30 +26,38 @@
                     <div class="BlackScreen"></div>
                     <!-- Text Content -->
                     <div class="flex absolute  w-56 h-28 flex-col ml-3 mt-3 ">
-                        <p class="text-sm font-base text-gray-300">{{ card.Date }}</p>
-                        <p class="text-xl font-bold text-white">{{ card.Name  }}</p>
+                        <p class="text-sm font-base text-gray-300">{{ card.year }}</p>
+                        <p class="text-xl font-bold text-white">{{ card.name  }}</p>
                     </div>
                 </nuxt-link>
+
                 </div>
 
             </div>
 
         </div>
     </div>
+</section>
 </template>
 <script>
 export default {
-data() {
-    return {
+   async fetch(){
+       this.porto = await fetch(
+           'https://my-porto-api.herokuapp.com/porto'
+       ).then((res) => res.json())
+   },
+   data() {
+       return {
+           porto:[]
+       }
+   },
 
-        DataContent:[
-            {Date:'2020-2021',Name:'Marketing Portofolio - Bagas Portofolio Website',img:require('../assets/img/bagasporto.png')},
-            {Date:'2021',Name:'Artist Portofolio - Trenandy Portofolio Website',img:require('../assets/img/trenandy.png')},
-            {Date:'2021',Name:'Company Profile Website - Daramas Perkasa Website',img:require('../assets/img/company.png')},
-        ]
+   computed: {
+       Filteredporto(){
+           return this.porto.slice(0,4);
+       }
 
-    }
-},
+   }
 }
 </script>
 <style scoped>

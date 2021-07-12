@@ -1,5 +1,6 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
+  loading: '~/components/LoadingBar.vue',
   head: {
     title: 'RayandikaPortofolio',
     htmlAttrs: {
@@ -15,12 +16,15 @@ export default {
     ]
   },
 
+
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    '~/plugins/navscroll.js',
+    '~/plugins/aos.client.js'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -33,9 +37,14 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    '@nuxtjs/axios',
+    '@nuxtjs/toast',
   ],
+
+
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-  }
+  } ,
+
 }

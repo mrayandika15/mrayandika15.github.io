@@ -1,8 +1,13 @@
 <template >
-<div class="flex w-full h-screen relative">
-    <div class="flex w-full flex-col  self-end md:self-center  md:ml-16">
+<section id="home" class="relative h-full">
+<div class="flex w-full h-screen relative " >
+    <div class="flex w-full  flex-col  self-end md:self-center  md:ml-16">
         <!-- TEXT HOME PAGE -->
-        <div class=" ml-3 mb-3 mr-3 flex text-white flex-col relative ">
+        <div class=" ml-3 mb-3 mr-3 flex text-white flex-col relative"
+        data-aos="fade-up"
+        data-aos-delay="500"
+        data-aos-once="true"
+        >
             <p class="font-base text-xs">Muhammad Rayandika</p>
             <div class="relative">
                 <h3 class="font-bold text-xl relative w-96 md:text-3xl md:w-1/2">Frontend Web Developer
@@ -14,13 +19,19 @@
         </div>
 
 
+
         <!-- BUTTON HOMEPAGE -->
-        <div class="flex ml-3 mb-4">
+        <div class="flex ml-3 mb-4"
+        data-aos="fade-up"
+        data-aos-delay="500"
+        data-aos-once="true"
+        >
             <nuxt-link to="/Aboutme">
                 <button class="border border-white text-white text-xs py-1 px-3 mr-5 md:py-2 md:px-3 transition-all hover:bg-white hover:text-black " >Read More</button>
             </nuxt-link>
 
                 <button class="border border-white text-white text-xs py-1 px-3 transition-all hover:bg-white hover:text-black" >View More</button>
+
         </div>
 
         <!-- Scroll Animation -->
@@ -29,7 +40,9 @@
 
 
     </div>
+
 </div>
+</section>
 </template>
 <script>
 export default {

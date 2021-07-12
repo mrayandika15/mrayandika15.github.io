@@ -1,5 +1,5 @@
 <template >
-    <div class="grid-cols-2 md:grid grid-cols-4 border-t-2 py-24 gap-2 mt-10  border-gray-500 p-5 text-white w-full h-full  ">
+    <div class="grid-cols-2 z-50 md:grid grid-cols-4 border-t-2 py-24 gap-2 mt-10  border-gray-500 p-5 text-white w-full h-full  ">
         <!-- Contact Info -->
         <div class="contactInfo mb-5 md:mb-0 ">
                 <div class="containerInfo flex ">
