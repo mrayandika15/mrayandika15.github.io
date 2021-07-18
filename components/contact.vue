@@ -1,11 +1,13 @@
 <template >
 <section id="contact">
-    <div class="flex w-full h-full flex-col text-white ml-2 md:ml-16 my-36">
+    <div class="flex w-full h-full flex-col text-white ml-2 md:ml-16 my-36"
+    data-aos="fade-up"   data-aos-once="true"
+    >
         <!-- Pembatas -->
         <div class="flex flex-col">
-            <h4 class="md:text-3xl">Contact</h4>
+            <h4 class="md:text-5xl md:my-3 text-4xl font-semibold">Contact</h4>
             <div class="underline my-3"></div>
-            <p class="text-gray-300 font-semibold">Interested ? Drop me a line if you want to work together on something exciting. Big or small </p>
+            <p class="text-gray-300 text-base md:text-lg font-semibold">Interested ? Drop me a line if you want to work together on something exciting. Big or small </p>
         </div>
 
         <div class="flex w-4/5 h-full relative">

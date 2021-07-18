@@ -1,21 +1,25 @@
 <template >
   <div class="container">
-    <placeholder />
 
-    <HomePage />
-    <Project />
-    <Personal />
-    <contact />
+    <placeholder />
+    <vue-scroll-snap :fullscreen="true">
+      <HomePage />
+      <Project />
+      <Personal />
+      <contact />
+   </vue-scroll-snap>
   </div>
 </template>
 <script>
+
 export default {
   created () {
     this.$nextTick(() => {
       this.$nuxt.$loading.start()
-      setTimeout(() => this.$nuxt.$loading.finish(), 1000)
+      setTimeout(() => this.$nuxt.$loading.finish(), 2000)
     })
-  }
+  },
+
 
 }
 </script>
@@ -27,17 +31,17 @@ export default {
 
   }
 
+  .container{
+    scroll-snap-type: y  mandatory;
+  }
 
+  section{
+    scroll-snap-align: start;
+  }
 
-
-
-
-
-
-
-
-
-
+  html{
+    font-family: Montserrat;
+  }
 
 
 

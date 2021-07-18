@@ -1,11 +1,10 @@
 <template >
-    <div class="fixed inset-y-0 left-0 w-10 hidden md:flex flex-col items-center justify-end text-white  "
+    <div class="absolute  inset-y-0 left-0 w-10 hidden md:flex flex-col items-center justify-end text-white  "
     data-aos="fade-up"
     data-aos-delay="500"
-    data-aos-once="true"
     >
 
-        <div class="my-2 mr-3 mb-7 ContainerSocial relative " v-for="icons in icon"
+        <div class="my-2  mb-7 ContainerSocial relative " v-for="icons in icon"
 
         >
             <div class=" w-32 h-5 absolute top-0 left-8 text-white Social opacity-0 hidden  ">

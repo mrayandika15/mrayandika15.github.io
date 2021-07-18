@@ -7,8 +7,8 @@
             data-aos="fade-up"
             data-aos-once="true"
             >
-                <h4 class="md:text-3xl">Project</h4>
-                <div class="underline my-3"></div>
+                <h4 class="md:text-5xl text-4xl md:my-3">Project</h4>
+                <div class="underline my-3 ml-1"></div>
             </div>
             <!-- Content Project -->
             <!-- <div class="flex text-white w-full items-center flex-col  md:ml-16 md:flex-row md:flex-wrap"> -->

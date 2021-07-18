@@ -8,35 +8,36 @@
         data-aos-delay="500"
         data-aos-once="true"
         >
-            <p class="font-base text-xs">Muhammad Rayandika</p>
+            <p class="font-base md:ml-1 text-gray-200 text-xs">Muhammad Rayandika</p>
             <div class="relative">
-                <h3 class="font-bold text-xl relative w-96 md:text-3xl md:w-1/2">Frontend Web Developer
+                <h3 class="font-bold text-3xl w-full relative w-96 md:text-5xl md:w-1/2">Frontend Web Developer
                     and User Interface Designer</h3>
                     <div class="underline my-2"></div>
             </div>
-            <p class="font-base text-xs mr-6 w-96  md:w-80 md:text-sm text-gray-200">My experiences in web development is around 4 years and thats start in my senior high school , until now i have finished many project especialy in ecommerce and portofolio projects
+            <p class="font-base text-base mr-6 w-full  md:w-1/2 text-justify md:text-base text-gray-200">My experiences in web development is around 4 years and thats start in my senior high school , until now i have finished many project especialy in ecommerce and portofolio projects
             </p>
         </div>
 
 
 
         <!-- BUTTON HOMEPAGE -->
-        <div class="flex ml-3 mb-4"
+        <div class="flex  mb-4"
         data-aos="fade-up"
         data-aos-delay="500"
         data-aos-once="true"
         >
-            <nuxt-link to="/Aboutme">
-                <button class="border border-white text-white text-xs py-1 px-3 mr-5 md:py-2 md:px-3 transition-all hover:bg-white hover:text-black " >Read More</button>
-            </nuxt-link>
 
-                <button class="border border-white text-white text-xs py-1 px-3 transition-all hover:bg-white hover:text-black" >View More</button>
+a
+                <button class="border border-white text-white text-sm py-2 px-3 md:py-3 md:text-sm md:px12 transition-all hover:bg-white  hover:text-black" >View More</button>
 
         </div>
 
         <!-- Scroll Animation -->
 
             <div class="icon-scroll mb-3 "></div>
+
+                  <!-- Social Media -->
+                  <SocialMedia />
 
 
     </div>
