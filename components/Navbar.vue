@@ -1,4 +1,7 @@
 <template >
+    <div class="h-full w-full">
+
+
         <div class="flex w-full h-24 justify-between fixed z-20">
             <!-- Rayandika -->
 
@@ -13,9 +16,12 @@
             <div class="flex text-white self-center pr-2 mr-10 md:mr-16 md:hidden z-50 " >
                 <div class="text-sm font-semibold cursor-pointer menu" :class="{ active : isActive }" v-on:click="Triggered" ></div>
             </div>
+        </div>
 
-            <!-- Nav Triggered -->
-            <div class="absolute w-full h-screen bg-black z-10 text-white Triggered"
+
+          <!-- Nav Triggered -->
+
+            <div class="fixed w-full  bg-black z-10 text-white Triggered"
             :class="{ active : isActive }"
             >
                 <div class="flex flex-col w-full h-full items-center justify-center font-semibold ">
@@ -36,10 +42,7 @@
 
 
 
-
-
-
-        </div>
+    </div>
 </template>
 <script>
 export default {
@@ -86,6 +89,7 @@ export default {
                 }
             ],
             isActive:false ,
+
         }
     },
 
@@ -98,13 +102,17 @@ export default {
 }
 </script>
 <style  >
+
+
     .Triggered{
         transform: translateX(100%);
         transition: all .5s ease;
+        height: 100%;
     }
 
     .Triggered.active{
         transform: translateX(0%);
+
     }
 
     .scrollactive-item.active{

@@ -2,19 +2,25 @@
 <section id="home" class="relative h-full">
 <div class="flex w-full h-screen relative " >
     <div class="flex w-full  flex-col  self-end md:self-center  md:ml-16">
+
+        <div class="image w-full h-full flex  md:absolute flex items-end justify-end md:right-36 md:bottom-60 z-10  ">
+            <img class="max-w-full w-full  md:w-1/3 h-auto z-10 rounded-lg" src="../assets/img/Fotoreal2.jpeg" alt="">
+        </div>
+
+
         <!-- TEXT HOME PAGE -->
-        <div class=" ml-3 mb-3 mr-3 flex text-white flex-col relative"
+        <div class=" ml-3 mb-3 mr-3 flex text-white flex-col relative "
         data-aos="fade-up"
         data-aos-delay="500"
         data-aos-once="true"
         >
             <p class="font-base md:ml-1 text-gray-200 text-xs">Muhammad Rayandika</p>
             <div class="relative">
-                <h3 class="font-bold text-3xl w-full relative w-96 md:text-5xl md:w-1/2">Frontend Web Developer
+                <h3 class="font-bold text-xl w-full relative w-96 md:text-5xl md:w-1/2">Frontend Web Developer
                     and User Interface Designer</h3>
                     <div class="underline my-2"></div>
             </div>
-            <p class="font-base text-base mr-6 w-full  md:w-1/2 text-justify md:text-base text-gray-200">My experiences in web development is around 4 years and thats start in my senior high school , until now i have finished many project especialy in ecommerce and portofolio projects
+            <p class="font-base text-sm mr-6 w-full  md:w-1/2 text-justify md:text-base text-gray-200">My experiences in web development is around 4 years and thats start in my senior high school , until now i have finished many project especialy in ecommerce and portofolio projects
             </p>
         </div>
 
@@ -27,20 +33,23 @@
         data-aos-once="true"
         >
 
-a
-                <button class="border border-white text-white text-sm py-2 px-3 md:py-3 md:text-sm md:px12 transition-all hover:bg-white  hover:text-black" >View More</button>
+        <a class="ml-3" href="#project">
+            <button class="border border-white text-white text-sm py-2 px-3 md:py-3 md:text-sm md:px12 transition-all hover:bg-white  hover:text-black" >View More</button>
+        </a>
 
         </div>
 
         <!-- Scroll Animation -->
 
-            <div class="icon-scroll mb-3 "></div>
+            <div class="icon-scroll mb-3 z-20 "></div>
 
                   <!-- Social Media -->
                   <SocialMedia />
 
 
     </div>
+
+
 
 </div>
 </section>

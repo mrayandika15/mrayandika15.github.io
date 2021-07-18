@@ -7,7 +7,7 @@
             data-aos="fade-up"
             data-aos-once="true"
             >
-                <h4 class="md:text-5xl text-4xl md:my-3">Project</h4>
+                <h4 class="md:text-5xl text-2xl md:my-3">Project</h4>
                 <div class="underline my-3 ml-1"></div>
             </div>
             <!-- Content Project -->

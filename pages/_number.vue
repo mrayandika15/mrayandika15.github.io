@@ -36,8 +36,14 @@
 
         <div class="w-full h-full md:col-span-2 my-10 "  data-aos="fade-up"   data-aos-once="true">
             <div class="flex justify-center">
-                <button class="border border-white text-white text-xs py-1 px-3 mr-5 md:py-2 md:px-6 transition-all hover:bg-white hover:text-black text-md" >Website</button>
-                <button class="border border-white text-white text-xs py-1 px-3 mr-5 md:py-2 md:px-6 transition-all hover:bg-white hover:text-black text-md" >Source Code</button>
+                <a :href="porto.website" target="_blank">
+                    <button class="border border-white text-white text-xs py-1 px-3 mr-5 md:py-2 md:px-6 transition-all hover:bg-white hover:text-black text-md" >Website</button>
+                </a>
+
+                <a :href="porto.source" target="_blank">
+                    <button class="border border-white text-white text-xs py-1 px-3 mr-5 md:py-2 md:px-6 transition-all hover:bg-white hover:text-black text-md" >Source Code</button>
+                </a>
+
             </div>
         </div>
 

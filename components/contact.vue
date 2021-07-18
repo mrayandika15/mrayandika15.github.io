@@ -5,7 +5,7 @@
     >
         <!-- Pembatas -->
         <div class="flex flex-col">
-            <h4 class="md:text-5xl md:my-3 text-4xl font-semibold">Contact</h4>
+            <h4 class="md:text-5xl md:my-3 text-2xl font-semibold">Contact</h4>
             <div class="underline my-3"></div>
             <p class="text-gray-300 text-base md:text-lg font-semibold">Interested ? Drop me a line if you want to work together on something exciting. Big or small </p>
         </div>

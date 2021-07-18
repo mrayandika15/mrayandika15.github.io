@@ -2,12 +2,12 @@
   <div class="container">
 
     <placeholder />
-    <vue-scroll-snap :fullscreen="true">
+
       <HomePage />
       <Project />
       <Personal />
       <contact />
-   </vue-scroll-snap>
+
   </div>
 </template>
 <script>
@@ -31,13 +31,13 @@ export default {
 
   }
 
-  .container{
-    scroll-snap-type: y  mandatory;
-  }
-
-  section{
-    scroll-snap-align: start;
-  }
+  body {
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+}
+html {
+  height: -webkit-fill-available;
+}
 
   html{
     font-family: Montserrat;
